@@ -273,18 +273,18 @@ export const disciplinasBase = [
     nome: "Investigação Policial IX - Crimes contra vulneráveis - Crimes de Preconceito",
     docente: "Hilmária",
     cargahr:"20h",
-    realizada: true,
-    nota: true,
-    avaliacao: true,
+    realizada: false,
+    nota: false,
+    avaliacao: false,
     // link: "https://forms.gle/exemplo1"
   },
   {
     nome: "Investigação Policial V - Crimes Cibernéticos - Busca Eletrônica",
     docente: "Jeorgy Vennâncio/ Monitor: João Ildefonso",
     cargahr:"20h", 
-    realizada: true,
+    realizada: false,
     nota: false,
-    avaliacao: true,
+    avaliacao: false,
     // link: "https://forms.gle/exemplo2"
   },
   {
@@ -461,7 +461,7 @@ export const disciplinasBase = [
     nome: "Perícias Legais - Criminalística",
     docente: "Adriano José", // conferir
     cargahr: "15h",
-    realizada: true,
+    realizada: false,
     nota: false,
     avaliacao: false,
   },
