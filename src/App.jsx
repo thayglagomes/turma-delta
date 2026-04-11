@@ -61,22 +61,22 @@ export default function App() {
 
         <section className="stats">
           <div className="statCard">
-            <p>Total</p>
+            <p>Todal de Disciplinas</p>
             <h3>{stats.total}</h3>
           </div>
 
           <div className="statCard">
-            <p>Concluídas</p>
+            <p>Disciplinas Concluídas</p>
             <h3>{stats.concluidas}</h3>
           </div>
 
           <div className="statCard">
-            <p>Notas</p>
+            <p>Notas Lançadas</p>
             <h3>{stats.notas}</h3>
           </div>
 
           <div className="statCard">
-            <p>Avaliar Docentes</p>
+            <p>Docentes Avaliados</p>
             <h3>{stats.avaliacoes}</h3>
           </div>
         </section>
