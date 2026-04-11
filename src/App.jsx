@@ -98,7 +98,7 @@ export default function App() {
                <button className={d.nota ? "btn ok" : "btn"}>
                   {d.nota ? "✔" : "○"} Nota lançada</button>
                 <button className={d.avaliacao ? "btn ok" : "btn"}>
-                  {d.avaliacao ? "✔" : "○"} Avaliação do Professor</button>
+                  {d.avaliacao ? "✔" : "○"} Avaliação do Docente</button>
               </div>
 
               {/* <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
