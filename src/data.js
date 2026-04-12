@@ -370,9 +370,9 @@ export const disciplinasBase = [
   },
   {
     nome: "Investigação Policial VIII - Crimes de estelionato e outras fraudes",
-    docente: "Renato Anderson", // conferir
+    docente: "Luiz Cotrim", // conferir
     cargahr: "10h",
-    realizada: false,
+    realizada: true,
     nota: false,
     avaliacao: false,
     // link: ""
