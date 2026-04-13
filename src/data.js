@@ -451,9 +451,9 @@ export const disciplinasBase = [
   },
   {
     nome: "Perícias Legais - Balística",
-    docente: "Vanduir Soares",
+    docente: "Vandeir Soares",
     cargahr: "5h",
-    realizada: false,
+    realizada: true,
     nota: false,
     avaliacao: false,
   },
@@ -485,8 +485,8 @@ export const disciplinasBase = [
     nome: "Perícias Legais - Medicina Legal",
     docente: "Eronildo Ribeiro", // conferir
     cargahr: "10h",
-    realizada: false,
-    nota: false,
+    realizada: true,
+    nota: true,
     avaliacao: false,
   },
   {
