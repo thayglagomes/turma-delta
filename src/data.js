@@ -327,8 +327,8 @@ export const disciplinasBase = [
     nome: "Investigação Policial VI - Crimes contra o Patrimônio: Roubo à residência e transeunte",
     docente: "Elizabeth Regina",
     cargahr:"5h",
-    realizada: false,
-    nota: false,
+    realizada: true,
+    nota: true,
     avaliacao: false,
     // link: "https://forms.gle/exemplo3"
   },
