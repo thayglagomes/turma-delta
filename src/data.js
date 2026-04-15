@@ -228,7 +228,7 @@ export const disciplinasBase = [
     nome: "Investigação Policial IV - Crimes de Tráfico de Entorpecentes",
     docente: "Thiago de Vasconcelos",
     cargahr: "20h",
-    realizada: false,
+    realizada: true,
     nota: false,
     avaliacao: false,
     // link: ""

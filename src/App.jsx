@@ -71,12 +71,12 @@ export default function App() {
           </div>
 
           <div className="statCard">
-            <p>Notas Lançadas</p>
+            <p>Notas Enviadas</p>
             <h3>{stats.notas}</h3>
           </div>
 
           <div className="statCard">
-            <p>Docentes Avaliados</p>
+            <p>Links Enviados</p>
             <h3>{stats.avaliacoes}</h3>
           </div>
         </section>
@@ -96,14 +96,14 @@ export default function App() {
                 {d.realizada ? "✔" : "○"} Disciplina realizada
                </button>
                <button className={d.nota ? "btn ok" : "btn"}>
-                  {d.nota ? "✔" : "○"} Nota lançada</button>
+                  {d.nota ? "✔" : "○"} Nota Enviada</button>
                 <button className={d.avaliacao ? "btn ok" : "btn"}>
-                  {d.avaliacao ? "✔" : "○"} Docente Avaliado</button>
+                  {d.avaliacao ? "✔" : "○"} Link Enviados</button>
               </div>
 
-              {/* <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
-                Avaliar Professor
-              </a> */}
+              <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
+                Avalie aqui o Professor
+              </a>
             </div>
           ))}
         </section>
