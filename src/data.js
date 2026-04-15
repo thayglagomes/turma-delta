@@ -231,7 +231,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: false,
     avaliacao: false,
-    // link: ""
+    link: "https://forms.gle/79XeDd4TsaifKSZMA"
   },
   {
     nome: "Investigação Policial IX - Crimes contra vulneráveis: crimes contra a mulher",
