@@ -175,7 +175,7 @@ export const disciplinasBase = [
     docente: "Rafaelle Narriman", // conferir
     cargahr: "20h",
     realizada: true,
-    nota: true,
+    nota: false,
     avaliacao: true,
     link: "https://forms.gle/XeNeqdC1Qknvmt4z7"
   },
