@@ -488,7 +488,7 @@ export const disciplinasBase = [
     cargahr: "10h",
     realizada: true,
     nota: true,
-    avaliacao: false,
+    avaliacao: true,
     link: "https://forms.gle/RgPZGn59UKit5LEXA"
   },
   {
