@@ -61,7 +61,7 @@ export default function App() {
 
         <section className="stats">
           <div className="statCard">
-            <p>Todal de Disciplinas</p>
+            <p>Total de Disciplinas</p>
             <h3>{stats.total}</h3>
           </div>
 
