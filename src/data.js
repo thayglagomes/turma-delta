@@ -59,7 +59,7 @@ export const disciplinasBase = [
     cargahr: "5h",
     realizada: true,
     nota: true,
-    avaliacao: true,
+    avaliacao: false,
     // link: ""
   },
   {
