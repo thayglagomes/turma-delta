@@ -32,8 +32,8 @@ export const disciplinasBase = [
     cargahr: "10h",
     realizada: true,
     nota: true,
-    avaliacao: false,
-    // link: ""
+    avaliacao: true,
+    link: "https://forms.gle/Yf9BavhSt5Jur47BA"
   },
   {
     nome: "Condutores de Veículos de Emergência",
@@ -64,12 +64,12 @@ export const disciplinasBase = [
   },
   {
     nome: "Direitos Humanos - Parte Geral",
-    docente: "Daniella Vicuna", // conferir
+    docente: "Daniella Vicuuna", // conferir
     cargahr: "10h",
     realizada: true,
     nota: true,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/cePJQdvbQYbX3NWn8"
   },
   {
     nome: "Direitos Humanos - Polícia Comunitária",
@@ -78,7 +78,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/Cm5epmAMVsy1Jycr7"
   },
   {
     nome: "Formalização de Procedimentos Policiais",
@@ -96,7 +96,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/HF76tqSCviEQsBc2A"
   },
   {
     nome: "Fundamentos de Gestão Pública - Gestão de Pessoas e Liderança",
@@ -114,7 +114,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/FqUz5BYm1MotDYGEA"
   },
   {
     nome: "Fundamentos de Gestão Pública -Sistema de Segurança Pública no Brasil e Gestão Integrada",
@@ -122,8 +122,8 @@ export const disciplinasBase = [
     cargahr: "5h",
     realizada: true,
     nota: true,
-    avaliacao: false,
-    // link: ""
+    avaliacao: true,
+    link: "https://forms.gle/a81dWFbJfr64k9x66"
   },
   {
     nome: "Gestão da Informação - Análise Criminal, Estatística Aplicada à Segurança Pública e Geoprocessamento I",
@@ -141,7 +141,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: false,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/dkceLPSKKfrDJP7s7"
   },
   {
     nome: "Gestão da Informação - Análise Criminal, Estatística Aplicada à Segurança Pública e Geoprocessamento III",
@@ -150,7 +150,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: false,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/tWWdpMiB6iwLwvfX7"
   },
   {
     nome: "Gestão da Informação - Sistema de Informação",
@@ -159,7 +159,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/hHsHdxu2VqCybZwE7"
   },
   {
     nome: "Gestão da Informação - Sistemas da Polícia Civil",
@@ -176,8 +176,8 @@ export const disciplinasBase = [
     cargahr: "20h",
     realizada: true,
     nota: true,
-    avaliacao: false,
-    // link: ""
+    avaliacao: true,
+    link: "https://forms.gle/XeNeqdC1Qknvmt4z7"
   },
   {
     nome: "Investigação Policial I - Parte Geral",
@@ -212,8 +212,8 @@ export const disciplinasBase = [
     cargahr: "5h",
     realizada: true,
     nota: false,
-    avaliacao: false,
-    // link: ""
+    avaliacao: true,
+    link: "https://forms.gle/si1K1y3RfnZeFRoJ8"
   },
   {
     nome: "Investigação Policial III - Crimes de Feminicídio - Módulo II",
@@ -230,7 +230,7 @@ export const disciplinasBase = [
     cargahr: "20h",
     realizada: true,
     nota: false,
-    avaliacao: false,
+    avaliacao: true,
     link: "https://forms.gle/79XeDd4TsaifKSZMA"
   },
   {
@@ -330,7 +330,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    link: "https://forms.gle/X3qcn912Mdugd78t8"
   },
     {
     nome: "Investigação Policial VI - Crimes contra o Patrimônio: Roubo a veículos e cargas",
@@ -370,12 +370,12 @@ export const disciplinasBase = [
   },
   {
     nome: "Investigação Policial VIII - Crimes de estelionato e outras fraudes",
-    docente: "Luiz Cotrim", // conferir
+    docente: "Luiz Cerqueira Cotrim Neto", // conferir
     cargahr: "10h",
     realizada: true,
     nota: false,
-    avaliacao: false,
-    // link: ""
+    avaliacao: true,
+    link: "https://forms.gle/Dggbke2CQUTRbGcY7"
   },
   {
     nome: "Investigação Policial X - Crimes contra a infância e a juventude / Escuta qualificada",
@@ -455,7 +455,8 @@ export const disciplinasBase = [
     cargahr: "5h",
     realizada: true,
     nota: false,
-    avaliacao: false,
+    avaliacao: true,
+    link: "https://forms.gle/h1EuKAdDncpLe6kt7"
   },
   {
     nome: "Perícias Legais - Criminalística",
@@ -504,6 +505,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: false,
+    link: "https://forms.gle/z7vEripbFiXKtvYZ7"
   },
   {
     nome: "Recuperação de Ativos",

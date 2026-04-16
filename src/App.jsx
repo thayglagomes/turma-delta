@@ -100,10 +100,17 @@ export default function App() {
                 <button className={d.avaliacao ? "btn ok" : "btn"}>
                   {d.avaliacao ? "✔" : "○"} Link Enviados</button>
               </div>
-
-              <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
+              {d.link ? (  
+                <a  href={d.link} target="_blank" rel="noreferrer" className="linkBtn" >
                 Avalie aqui o Professor
-              </a>
+                </a>
+                ) : (             
+                  <button className="linkBtn disabled" disabled>   Avaliação indisponível
+                  </button>
+                )}
+              {/* <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
+                Avalie aqui o Professor
+              </a> */}
             </div>
           ))}
         </section>
