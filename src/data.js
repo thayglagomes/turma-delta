@@ -276,7 +276,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo1"
+    // link: ""
   },
   {
     nome: "Investigação Policial V - Crimes Cibernéticos - Busca Eletrônica",
@@ -285,7 +285,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo2"
+    // link: ""
   },
   {
     nome: "Investigação Policial V - Crimes Cibernéticos/ Busca Eletrônica - Módulo Crimes Cibernéticos I",
@@ -294,7 +294,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial V - Crimes Cibernéticos / Busca Eletrônica - Módulo Crimes Cibernéticos II",
@@ -303,7 +303,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial V - Crimes Cibernéticos / Busca Eletrônica - Módulo Crimes Cibernéticos III",
@@ -312,7 +312,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial V - Crimes Cibernéticos / Busca Eletrônica - Módulo Crimes Cibernéticos IV",
@@ -321,7 +321,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial VI - Crimes contra o Patrimônio: Roubo à residência e transeunte",
@@ -329,7 +329,7 @@ export const disciplinasBase = [
     cargahr:"5h",
     realizada: true,
     nota: true,
-    avaliacao: false,
+    avaliacao: true,
     link: "https://forms.gle/X3qcn912Mdugd78t8"
   },
     {
@@ -339,7 +339,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial VI - Crimes Contra o Patrimônio, Roubo a instituições financeiras",
@@ -348,7 +348,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial VII - Crimes Contra Lavagem de dinheiro e combate ao crime Organizado - Lavagem de Dinheiro",
@@ -357,7 +357,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
     {
     nome: "Investigação Policial VII - Crimes Contra Lavagem de dinheiro e combate ao crime Organizado - Crime Organizado",
@@ -366,7 +366,7 @@ export const disciplinasBase = [
     realizada: false,
     nota: false,
     avaliacao: false,
-    // link: "https://forms.gle/exemplo3"
+    // link: ""
   },
   {
     nome: "Investigação Policial VIII - Crimes de estelionato e outras fraudes",
@@ -504,7 +504,7 @@ export const disciplinasBase = [
     cargahr: "10h",
     realizada: true,
     nota: true,
-    avaliacao: false,
+    avaliacao: true,
     link: "https://forms.gle/z7vEripbFiXKtvYZ7"
   },
   {
