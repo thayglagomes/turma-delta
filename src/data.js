@@ -451,7 +451,7 @@ export const disciplinasBase = [
   },
   {
     nome: "Perícias Legais - Balística",
-    docente: "Vandeir Soares",
+    docente: "Vanduir Soares",
     cargahr: "5h",
     realizada: true,
     nota: false,
