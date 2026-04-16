@@ -67,7 +67,7 @@ export const disciplinasBase = [
     docente: "Daniella Vicuuna", // conferir
     cargahr: "10h",
     realizada: true,
-    nota: true,
+    nota: false,
     avaliacao: true,
     link: "https://forms.gle/cePJQdvbQYbX3NWn8"
   },
