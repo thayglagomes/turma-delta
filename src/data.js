@@ -489,6 +489,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: true,
     avaliacao: false,
+    link: "https://forms.gle/RgPZGn59UKit5LEXA"
   },
   {
     nome: "Planejamento Operacional",
