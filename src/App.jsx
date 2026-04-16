@@ -105,8 +105,7 @@ export default function App() {
                 Avalie aqui o Professor
                 </a>
                 ) : (             
-                  <button className="linkBtn disabled" disabled>   Avaliação indisponível
-                  </button>
+                  <button className="linkBtn disabled" disabled>   Avaliação indisponível</button>
                 )}
               {/* <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
                 Avalie aqui o Professor
