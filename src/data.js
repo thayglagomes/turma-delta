@@ -102,8 +102,8 @@ export const disciplinasBase = [
     nome: "Fundamentos de Gestão Pública - Gestão de Pessoas e Liderança",
     docente: "Graciano Danillo", // conferir
     cargahr: "10h",
-    realizada: false,
-    nota: false,
+    realizada: true,
+    nota: true,
     avaliacao: false,
     // link: ""
   },
@@ -246,8 +246,8 @@ export const disciplinasBase = [
     nome: "Investigação Policial IX - Crimes contra vulneráveis: crimes contra o consumidor",
     docente: "Paulo Ênio",
     cargahr: "5h",
-    realizada: false,
-    nota: false,
+    realizada: true,
+    nota: true,
     avaliacao: false,
     // link: ""
   },
@@ -336,8 +336,8 @@ export const disciplinasBase = [
     nome: "Investigação Policial VI - Crimes contra o Patrimônio: Roubo a veículos e cargas",
     docente: "Lucas Rothardand",
     cargahr:"15h",
-    realizada: false,
-    nota: false,
+    realizada: true,
+    nota: true,
     avaliacao: false,
     // link: ""
   },
