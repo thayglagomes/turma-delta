@@ -247,7 +247,7 @@ export const disciplinasBase = [
     docente: "Paulo Ênio",
     cargahr: "5h",
     realizada: true,
-    nota: true,
+    nota: false,
     avaliacao: false,
     // link: ""
   },
