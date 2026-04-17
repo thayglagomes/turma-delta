@@ -103,7 +103,7 @@ export const disciplinasBase = [
     docente: "Graciano Danillo", // conferir
     cargahr: "10h",
     realizada: true,
-    nota: true,
+    nota: false,
     avaliacao: false,
     // link: ""
   },
@@ -211,7 +211,7 @@ export const disciplinasBase = [
     docente: "Jaíne Araújo", // conferir
     cargahr: "5h",
     realizada: true,
-    nota: false,
+    nota: true,
     avaliacao: true,
     link: "https://forms.gle/si1K1y3RfnZeFRoJ8"
   },
