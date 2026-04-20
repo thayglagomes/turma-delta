@@ -1,3 +1,5 @@
+import { Factory } from "lucide-react";
+
 export const disciplinasBase = [
   {
     nome: "APH Tático",
@@ -94,7 +96,7 @@ export const disciplinasBase = [
     docente: "Ivana Leite",
     cargahr: "10h",
     realizada: true,
-    nota: true,
+    nota: false,
     avaliacao: true,
     link: "https://forms.gle/HF76tqSCviEQsBc2A"
   },
