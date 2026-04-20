@@ -337,7 +337,7 @@ export const disciplinasBase = [
     docente: "Lucas Rothardand",
     cargahr:"15h",
     realizada: true,
-    nota: true,
+    nota: false,
     avaliacao: false,
     // link: ""
   },
