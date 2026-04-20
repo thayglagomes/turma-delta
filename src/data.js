@@ -247,7 +247,7 @@ export const disciplinasBase = [
     docente: "Paulo Ênio",
     cargahr: "5h",
     realizada: true,
-    nota: false,
+    nota: true,
     avaliacao: false,
     // link: ""
   },
@@ -373,7 +373,7 @@ export const disciplinasBase = [
     docente: "Luiz Cerqueira Cotrim Neto", // conferir
     cargahr: "10h",
     realizada: true,
-    nota: false,
+    nota: true,
     avaliacao: true,
     link: "https://forms.gle/Dggbke2CQUTRbGcY7"
   },
