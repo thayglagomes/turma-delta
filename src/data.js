@@ -250,7 +250,7 @@ export const disciplinasBase = [
     cargahr: "5h",
     realizada: true,
     nota: true,
-    avaliacao: false,
+    avaliacao: true,
     // link: ""
   },
   {
@@ -340,7 +340,7 @@ export const disciplinasBase = [
     cargahr:"15h",
     realizada: true,
     nota: false,
-    avaliacao: false,
+    avaliacao: true,
     // link: ""
   },
     {
