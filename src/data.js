@@ -219,9 +219,9 @@ export const disciplinasBase = [
   },
   {
     nome: "Investigação Policial III - Crimes de Feminicídio - Módulo II",
-    docente: "Maira Roberta",
+    docente: "Luísa Nascimento",
     cargahr: "10h",
-    realizada: false,
+    realizada: true,
     nota: false,
     avaliacao: false,
     // link: ""
