@@ -100,16 +100,24 @@ export default function App() {
                 <button className={d.avaliacao ? "btn ok" : "btn"}>
                   {d.avaliacao ? "✔" : "○"} Link Enviado</button>
               </div>
-              {d.link ? (  
-                <a  href={d.link} target="_blank" rel="noreferrer" className="linkBtn" >
-                Avalie aqui o Professor
-                </a>
-                ) : (             
-                  <button className="linkBtn disabled" disabled>   Avaliação indisponível</button>
+
+              {/* BOTÃO CENTRAL */}
+              <div className="linkArea">
+                {disciplina.link ? (
+                  <a
+                    href={disciplina.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btnLink"
+                  >
+                    Avaliar Professor
+                  </a>
+                ) : (
+                  <button className="btnLink disabled" disabled>
+                    Avaliação indisponível
+                  </button>
                 )}
-              {/* <a href={d.link} target="_blank" rel="noreferrer" className="linkBtn">
-                Avalie aqui o Professor
-              </a> */}
+              </div>
             </div>
           ))}
         </section>

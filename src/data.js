@@ -341,7 +341,7 @@ export const disciplinasBase = [
     realizada: true,
     nota: false,
     avaliacao: true,
-    // link: ""
+    link: "https://forms.gle/F4ExCXUPyxxAMA597"
   },
     {
     nome: "Investigação Policial VI - Crimes Contra o Patrimônio, Roubo a instituições financeiras",
@@ -456,7 +456,7 @@ export const disciplinasBase = [
     docente: "Vanduir Soares",
     cargahr: "5h",
     realizada: true,
-    nota: false,
+    nota: true,
     avaliacao: true,
     link: "https://forms.gle/h1EuKAdDncpLe6kt7"
   },
