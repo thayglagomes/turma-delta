@@ -222,7 +222,7 @@ export const disciplinasBase = [
     docente: "Luísa Nascimento",
     cargahr: "10h",
     realizada: true,
-    nota: false,
+    nota: true,
     avaliacao: false,
     // link: ""
   },
