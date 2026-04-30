@@ -1,4 +1,3 @@
-import { Factory } from "lucide-react";
 
 export const disciplinasBase = [
   {
