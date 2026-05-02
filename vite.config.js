@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/turma-delta/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  }
 })
