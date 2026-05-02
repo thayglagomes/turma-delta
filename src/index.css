@@ -4,20 +4,66 @@
   padding: 0;
 }
 
-body {
+:root {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #06130d 0%, #0b2419 45%, #07120d 100%);
   color: white;
 }
 
-.page {
-  min-height: 100vh;
-  padding: 20px 14px 40px;
+/* MENU */
+
+.menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
+.menuBtn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #1f3d2b;
+  background: #0b2419;
+  color: #d1fae5;
+  cursor: pointer;
+}
+
+.menuBtn.ativo {
+  background: #10b981;
+  color: #022c22;
+  font-weight: 700;
+}
+
+/* CORPO */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #06130d 0%, #0b2419 45%, #07120d 100%);
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding: 32px 36px;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('/delta.svg');
+  background-repeat: repeat;
+  background-size: 200px;
+
+  opacity: 0.035;
+  pointer-events: none;
+  /* z-index: 0;  */
+}
+
+
+/* garante que o conteúdo fique acima */
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
@@ -26,16 +72,40 @@ body {
   border-radius: 24px;
   padding: 20px;
   margin-bottom: 18px;
+  
 }
 
-.badge {
-  display: inline-block;
-  background: rgba(16, 185, 129, 0.2);
-  color: #d1fae5;
+.turmaHeader {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end; /* 🔥 joga tudo pra direita */
+}
+
+.turmaBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+/* Badge com borda verde (igual progresso) */
+.turmaBadge {
   padding: 8px 14px;
   border-radius: 999px;
+
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid #10b981;
+
+  color: #d1fae5;
+  font-weight: 600;
   font-size: 13px;
-  margin-bottom: 12px;
+}
+
+/* Data */
+.turmaData {
+  font-size: 12px;
+  color: #d1fae5;
+  opacity: 0.7;
 }
 
 .hero h1 {
@@ -44,10 +114,21 @@ body {
 }
 
 .hero p {
-  color: #d7e5de;
   line-height: 1.5;
   margin-bottom: 16px;
 }
+
+.filtroTurma {
+  margin: 0 0 10px 0;
+}
+
+.filtroTurma select {
+  padding: 5px;
+  margin: 0 0 0 5px;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
 
 .progressBox {
   background: rgba(0, 0, 0, 0.18);
@@ -63,16 +144,14 @@ body {
 
 .progressBar {
   width: 100%;
-  height: 12px;
+  height: 10px;
   background: rgba(255, 255, 255, 0.12);
-  border-radius: 999px;
-  overflow: hidden;
+  border-radius: 10px;
 }
 
 .progressFill {
   height: 100%;
   background: linear-gradient(90deg, #10b981, #22c55e);
-  border-radius: 999px;
 }
 
 .progressBox small {
@@ -81,6 +160,7 @@ body {
   color: #d7e5de;
 }
 
+/* Quantitativos dispostos lado a lado */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,6 +321,215 @@ body {
   color: #94a3b8;
 }
 
+.linkArea {
+  margin-top: 16px;
+}
+
+.btnLink {
+  display: block;          /* 🔥 faz ocupar toda largura */
+  width: 100%;             /* 🔥 full width */
+  padding: 14px;
+  border-radius: 14px;
+  background: #10b981;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btnLink:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.btnLink.disabled {
+  background: #dbe3ee;
+  color: #64748b;
+  opacity: 0.7;
+  display: flex;              /* 🔥 ativa flex */
+  align-items: center;        /* 🔥 centraliza vertical */
+  justify-content: center;    /* 🔥 centraliza horizontal */
+}
+
+.saveArea {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnSalvar {
+  width: 100%;
+  max-width: 420px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 14px;
+  background: #065f46;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btnSalvar:hover {
+  background: #047857;
+}
+
+.btnSalvar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* LINK */
+.linkArea {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto; /* 🔥 chave aqui */
+  gap: 10px;
+  align-items: center;
+}
+
+.btnLink {
+  width: 100%;
+  padding: 16px;
+  border-radius: 18px;
+  background: #10b981;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btnLink.disabled {
+  background: #dbe3ee;
+  color: #94a3b8;
+}
+
+.btnEditarLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+  border: 1px solid #d6e1ea;
+  background: #f8fafc;
+  color: #065f46;
+
+  cursor: pointer;
+  transition: 0.2s;
+  flex-shrink: 0; /* 🔥 importante */
+}
+
+.linkInputBox {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 10px;
+}
+
+.linkInputBox input {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #a7f3d0;
+}
+
+.btnApagarLink {
+  border: none;
+  border-radius: 14px;
+  background: #ef4444;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnEditarLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+  border: 1px solid #d6e1ea;
+  background: #f8fafc;
+  color: #065f46;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnEditarLink:hover {
+  background: #ecfdf5;
+}
+
+
+.notaLinha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #dbe3ea;
+}
+
+.notaLinha strong {
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.notaLinha input {
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #a7f3d0;
+
+  text-align: center;
+  font-weight: 700;
+
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.btnContent {
+  width: 100%;
+}
+
+.alunoTopo {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.alunoTopo h3 {
+  margin: 0;
+}
+
+.media {
+  margin-left: auto;
+  font-weight: 700;
+  color: #008c2f;
+}
+
+.alunoResumo {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+/* RESPONSIVIDADE */
 @media (max-width: 700px) {
   .stats {
     grid-template-columns: 1fr 1fr;
@@ -256,3 +545,4 @@ body {
     font-size: 1.5rem;
   }
 }
+
