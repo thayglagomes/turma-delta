@@ -457,7 +457,7 @@ function App() {
                         className={disciplina.nota ? 'btn ok' : 'btn'}
                         onClick={() => toggleCampo(disciplina.id, 'nota', disciplina.nota)}
                       >
-                        {disciplina.nota ? '✔' : '○'} Nota
+                        {disciplina.nota ? '✔' : '○'} Nota Enviada
                       </button>
 
                       <button
@@ -467,7 +467,7 @@ function App() {
                           toggleCampo(disciplina.id, 'avaliacao', disciplina.avaliacao)
                         }
                       >
-                        {disciplina.avaliacao ? '✔' : '○'} Avaliação
+                        {disciplina.avaliacao ? '✔' : '○'} Link Enviado
                       </button>
 
                       {/* BOTÃO CENTRAL */}
