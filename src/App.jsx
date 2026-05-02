@@ -4,7 +4,6 @@ import { supabase } from './supabase';
 import './index.css';
 
 function App() {
- 
   const [pagina, setPagina] = useState('painel');
 
   //PAINEL DE DISCIPLINA 
@@ -322,6 +321,7 @@ function App() {
   }, [disciplinasTurma]);
 
   return (
+    
     <div className="page">
       <div className="container">
         <nav className="menu">
