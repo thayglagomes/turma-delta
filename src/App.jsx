@@ -30,6 +30,7 @@ function App() {
     }
   }, [turma]);
 
+
   async function carregarDadosTurmaDelta() {
     setCarregando(true);
     setErro('');
@@ -199,7 +200,6 @@ function App() {
   }
 
   // FUNÇÕES DE NOTAS
-
   async function carregarAlunos(turmaId) {
     const { data, error } = await supabase
       .from('vw_media_alunos')
@@ -290,12 +290,13 @@ function App() {
     alert('Notas salvas com sucesso!');
   }
 
-
+ 
   const stats = useMemo(() => {
     const total = disciplinasTurma.length;
     const concluidas = disciplinasTurma.filter((d) => d.realizado).length;
     const notasLancadas = disciplinasTurma.filter((d) => d.nota).length;
-    const linksDisponiveis = disciplinasTurma.filter((d) => d.link && d.link.trim() !== '').length;
+    const linksDisponiveis = disciplinasTurma.filter((d) => d.avaliacao).length;
+    
     const totalHoras = disciplinasTurma.reduce((acc, d) => acc + (d.cargahr || 0), 0 );
 
     const horasConcluidas = disciplinasTurma
@@ -324,6 +325,7 @@ function App() {
    return (
     
     <div className="page">
+    
       <div className="container">
 
         <nav className="menu">
