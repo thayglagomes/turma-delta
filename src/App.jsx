@@ -338,7 +338,7 @@ function App() {
             className={pagina === 'notas' ? 'menuBtn ativo' : 'menuBtn'}
             onClick={() => setPagina('notas')}
           >
-            Notas
+            Notas dos Alunos
           </button>
         </nav>
 
