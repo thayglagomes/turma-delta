@@ -6,17 +6,27 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar código
+      - name: Baixar repositório
         uses: actions/checkout@v4
 
-      - name: Configurar Node
+      - name: Instalar Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -24,14 +34,20 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
-      - name: Gerar build
+      - name: Build
         run: npm run build
         env:
-          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
 
-      - name: Publicar no GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload do build
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: ./dist
+
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
