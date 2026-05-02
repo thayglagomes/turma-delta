@@ -321,14 +321,11 @@ function App() {
   }, [disciplinasTurma]);
 
 
-  console.log("RENDER:", disciplinasTurma.length);
-  return (
+   return (
     
     <div className="page">
       <div className="container">
 
-        <h1 style={{ color: "white" }}>Teste Turma Delta</h1>
-        <p style={{ color: "white" }}>Disciplinas: {disciplinasTurma.length}</p>
         <nav className="menu">
           <button
             className={pagina === 'painel' ? 'menuBtn ativo' : 'menuBtn'}
