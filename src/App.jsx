@@ -290,6 +290,12 @@ function App() {
     alert('Notas salvas com sucesso!');
   }
 
+  function formatarData(data) {
+    if (!data) return '';
+
+    const [ano, mes, dia] = data.split('-');
+    return `${dia}/${mes}/${ano}`;
+  }
  
   const stats = useMemo(() => {
     const total = disciplinasTurma.length;
@@ -357,7 +363,7 @@ function App() {
                   </span>
 
                   <small className="turmaData">
-                    {turma.dt_inicio}
+                   Início: {formatarData(turma.dt_inicio)}
                   </small>
                 </div>
               </div>
